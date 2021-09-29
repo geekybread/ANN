@@ -20,6 +20,7 @@ def save_plot(history, file_name):
     df = pd.DataFrame(history.history)
     df.plot(figsize=(10,8))
     plt.grid(True)
+    plt.plot()
 
     plot_dir = 'plots'
     os.makedirs(plot_dir, exist_ok=True) #only create if model_dir doesn't exists
